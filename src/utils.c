@@ -18,10 +18,6 @@ void ask_for_number() {
   printf(">> Enter a binary number: ");
 
   scanf("%s", binary);
-
-  size_t read_size = strlen(binary);
-
-  printf("Read size: %ld\n", read_size);
 }
 
 int check_number() {
@@ -90,7 +86,8 @@ void want_another_run() {
 }
 
 void print_acknowledgments() {
-  printf(">> Thank you for using the tool!\n\n");
+  printf("\n>> Thank you for using the tool!\n\n");
+
   printf("********************\n");
   printf("** See you later! **\n");
   printf("********************\n");
