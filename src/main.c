@@ -1,5 +1,5 @@
-#include "defines.h"
-#include "utils.h"
+#include "../include/defines.h"
+#include "../include/utils.h"
 #include <stdio.h>
 
 char binary[MAX_BINARY_BUFFER_SIZE];
