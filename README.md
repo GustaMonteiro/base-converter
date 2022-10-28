@@ -7,5 +7,3 @@ Was developed just to test a text editor, so don't pay attention to the way it w
 ## Build and run
 
 Just use run.sh script
-
-### !! Still need to add the binary to decimal converter properly

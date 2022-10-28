@@ -11,7 +11,7 @@ int main() {
   while (!end_program) {
     ask_for_number();
 
-    if(check_number()){
+    if (check_number()) {
       try_again();
       continue;
     }

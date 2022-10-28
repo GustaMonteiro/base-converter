@@ -28,7 +28,7 @@ int check_number() {
     if (binary[i] != ONE && binary[i] != ZERO) {
       printf("** Invalid input! **\n");
       printf("In position %d there is a \'%c\' character!\n", i, binary[i]);
-      return 1;
+      return -1;
     }
   }
   return 0;
@@ -57,7 +57,20 @@ void try_again() {
 }
 
 int convert_number() {
-  printf("Converts the number!!\n");
+  extern char binary[MAX_BINARY_BUFFER_SIZE];
+  int numberOfBits = strlen(binary);
+
+  int currentPowerOfTwo = 1;
+  int decimalNumber = 0;
+
+  for (int i = numberOfBits - 1; i >= 0; i--) {
+    if (binary[i] == ONE)
+      decimalNumber += currentPowerOfTwo;
+    currentPowerOfTwo *= 2;
+  }
+
+  printf("%s in decimal is %d\n", binary, decimalNumber);
+
   return 0;
 }
 
