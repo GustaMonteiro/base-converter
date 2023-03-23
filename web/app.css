@@ -1,0 +1,9 @@
+input {
+    width: 20rem;
+}
+.numbers {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
