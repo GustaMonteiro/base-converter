@@ -30,6 +30,7 @@ main {
     background-color: #151515;
     border-radius: 15px;
     height: 75vh;
+    max-height: 525px;
     width: 90vw;
     max-width: 800px;
 }
