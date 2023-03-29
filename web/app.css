@@ -1,9 +1,40 @@
-input {
-    width: 20rem;
+html {
+    background-color: #333;
 }
+
+input {
+    width: 85vw;
+    max-width: 320px;
+    background-color: #bbb;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
 .numbers {
     margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div {
+    background-color: #151515;
+    border-radius: 15px;
+    height: 75vh;
+    width: 90vw;
+    max-width: 800px;
+}
+
+h1,
+span {
+    color: white;
 }
