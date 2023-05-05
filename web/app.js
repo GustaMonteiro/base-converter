@@ -55,9 +55,14 @@ const convertValues = (value, currentType) => {
 
 const eventFunction = type => {
     return function () {
-        const inputValue = bases[type].domElement.value;
+        let inputValue = bases[type].domElement.value;
         if (!inputValue)
             return setAllValues('');
+
+        inputValue = inputValue.replaceAll(',', '');
+        inputValue = inputValue.replaceAll(' ', '');
+        inputValue = inputValue.replaceAll('x', '');
+
         for (let char of inputValue) {
             const currentChar = char.toLowerCase();
             if (!bases[type].allowedChars.includes(currentChar))
